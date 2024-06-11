@@ -1,9 +1,11 @@
 
 import './Coin.css'
+import {useParams} from 'react-router-dom'
 const Coin = () => {
+  const {coinId}=useParams();
   return (
     <div>
-      <h2>Coin</h2>
+      <h2>Coin: {coinId}</h2>
     </div>
   )
 }
